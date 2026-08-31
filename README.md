@@ -1,6 +1,6 @@
 # Menu Pizzaria
 
-Um menu interativo para uma pizzaria em aplicação de console.
+Um menu interativo para uma pizzaria.
 
 ## 🚀 Funcionalidades
 
