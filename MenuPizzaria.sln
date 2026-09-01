@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36915.13 d17.14
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuPizzaria", "MenuPizzaria.csproj", "{D4102642-B41B-4112-A5F7-56E3D1C770EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuPizzaria", "src\MenuPizzaria.csproj", "{D4102642-B41B-4112-A5F7-56E3D1C770EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C81D07D6-44C8-4784-AFF5-9C6A5D44A017}
+		SolutionGuid = {4ED6E3F6-BEC1-4DDA-AABD-4CD82823ECCB}
 	EndGlobalSection
 EndGlobal
