@@ -11,5 +11,5 @@ Um menu interativo para uma pizzaria.
 
 ## 🛠️ Tecnologias Utilizadas
 
-- .NETFramework 4.8
+- .NET Framework 4.8
 - C#
