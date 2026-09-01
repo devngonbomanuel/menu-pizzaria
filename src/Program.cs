@@ -27,7 +27,7 @@ namespace MenuPizzaria
                         Console.Clear();
                     Console.WriteLine("*************************** Pizzaria MamaMia ***************************");
                     Console.WriteLine("\t\t\t*Pizza à Moda Angolana* \nUma pizza feita com os kitutes da " +
-                        "nossa terra, pensando nas famílias angolanas. \nPreço: Akz 7.000,00  \nTamanho: Familiar ");
+                        "nossa terra, pensado nas famílias angolanas. \nPreço: Akz 7.000,00  \nTamanho: Familiar ");
                         Console.WriteLine("\n1- Pedir \n2- Sair");
 
                         Console.Write("\nEscolha: ");
@@ -46,8 +46,8 @@ namespace MenuPizzaria
                                 Console.Clear();
                                 Console.WriteLine("************************* Pizzaria MamaMia *************************");
                                 Console.WriteLine($"Pedido: OD-{rnd.Next(1100, 5500)} " +
-                                $"Total a pagar: {precoTotal.ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))}" +
-                                $"\n\t\t\tGuarde o seu número de pedido, obrigado! ");
+                                $"\nTotal a pagar: {precoTotal.ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))}" +
+                                $"\n\t\tGuarde o seu número de pedido, obrigado! ");
                         }
                             else
                             {
@@ -114,8 +114,8 @@ namespace MenuPizzaria
                                     Console.Clear();
                                     Console.WriteLine("************************* Pizzaria MamaMia *************************");
                                     Console.WriteLine($"Pedido: TF-{rnd.Next(1100, 5500)} " +
-                                    $"Total a pagar: {precoTotal.ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
-                                    $"\n\t\t\tGuarde o seu número de pedido, obrigado! ");
+                                    $"\nTotal a pagar: {precoTotal.ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
+                                    $"\n\t\tGuarde o seu número de pedido, obrigado! ");
                                 }
                                 else
                                 {
@@ -182,8 +182,8 @@ namespace MenuPizzaria
                                     Console.Clear();
                                     Console.WriteLine("************************* Pizzaria MamaMia *************************");
                                     Console.WriteLine($"Pedido: TM-{rnd.Next(1100, 5500)}" +
-                                    $"Total a pagar: {(precoTotal).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
-                                    $"\n\t\t\tGuarde o seu número de pedido, obrigado! ");
+                                    $"\nTotal a pagar: {(precoTotal).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
+                                    $"\n\t\tGuarde o seu número de pedido, obrigado! ");
                                 }
                                 else
                                 {
@@ -231,7 +231,7 @@ namespace MenuPizzaria
                             Console.Clear();
                             Console.WriteLine("************************* Pizzaria MamaMia *************************");
                             Console.WriteLine("\t\t\t\t*Pizza Boscaiolae* \nCombinada com muçarela, cogumelos e linguiça. " +
-                            "Sabor intensamente saboroso, ideal para quem gosta de sabores fortess" +
+                            "Sabor intensamente saboroso, ideal para quem gosta de sabores fortes" +
                             "\nPreço: Akz 6.000,00");
                             Console.WriteLine("\n1- Pedir \n2- Voltar ao Menu");
 
@@ -250,8 +250,8 @@ namespace MenuPizzaria
                                     Console.Clear();
                                     Console.WriteLine("************************* Pizzaria MamaMia *************************");
                                     Console.WriteLine($"\t\t\t\tPedido: TP-{rnd.Next(1100, 5500)} " +
-                                    $"Total a pagar: {precoTotal.ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
-                                    $"\n\t\t\tGuarde o seu número de pedido, obrigado!");
+                                    $"\nTotal a pagar: {precoTotal.ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
+                                    $"\n\t\tGuarde o seu número de pedido, obrigado!");
                                 }
                                 else
                                 {
