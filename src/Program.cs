@@ -10,7 +10,18 @@ namespace MenuPizzaria
             int opcao, escolhaOferta, escolhaTamanho;
             decimal precoTotal = 0;
 
+            //Random  para senha do pedido
             Random rnd = new Random();
+
+            //Criando data do pedido
+            var dataUTC = DateTimeOffset.UtcNow;
+
+            TimeZoneInfo dataTimeZone = TimeZoneInfo.FindSystemTimeZoneById("W. Central Africa Standard Time");
+
+            var dataPedido = TimeZoneInfo.ConvertTime(dataUTC, dataTimeZone);
+
+
+
 
             //=======================Menu Inicial=======================
             Console.WriteLine("************************* Pizzaria MamaMia *************************");
@@ -45,8 +56,9 @@ namespace MenuPizzaria
                                 precoTotal = quantidade * 7000M;
                                 Console.Clear();
                                 Console.WriteLine("************************* Pizzaria MamaMia *************************");
-                                Console.WriteLine($"Pedido: OD-{rnd.Next(1100, 5500)} " +
+                                Console.WriteLine($"Senha do Pedido: OD-{rnd.Next(1100, 5500)} " +
                                 $"\nTotal a pagar: {precoTotal.ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))}" +
+                                $"\nData do Pedido: {dataPedido.ToString("ddd, dd-MM-yyyy HH:mm:ss")}" +
                                 $"\n\t\tGuarde o seu número de pedido, obrigado! ");
                         }
                             else
@@ -113,8 +125,9 @@ namespace MenuPizzaria
                                     precoTotal = quantidade * 14000M;
                                     Console.Clear();
                                     Console.WriteLine("************************* Pizzaria MamaMia *************************");
-                                    Console.WriteLine($"Pedido: TF-{rnd.Next(1100, 5500)} " +
+                                    Console.WriteLine($"Senha do Pedido: TF-{rnd.Next(1100, 5500)} " +
                                     $"\nTotal a pagar: {precoTotal.ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
+                                    $"\nData do Pedido: {dataPedido.ToString("ddd, dd-MM-yyyy HH:mm:ss")}" +
                                     $"\n\t\tGuarde o seu número de pedido, obrigado! ");
                                 }
                                 else
@@ -181,8 +194,9 @@ namespace MenuPizzaria
                                     precoTotal = quantidade * 10000M;
                                     Console.Clear();
                                     Console.WriteLine("************************* Pizzaria MamaMia *************************");
-                                    Console.WriteLine($"Pedido: TM-{rnd.Next(1100, 5500)}" +
+                                    Console.WriteLine($"Senha do Pedido: TM-{rnd.Next(1100, 5500)}" +
                                     $"\nTotal a pagar: {(precoTotal).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
+                                    $"\nData do Pedido: {dataPedido.ToString("ddd, dd-MM-yyyy HH:mm:ss")}" +
                                     $"\n\t\tGuarde o seu número de pedido, obrigado! ");
                                 }
                                 else
@@ -249,8 +263,9 @@ namespace MenuPizzaria
                                     precoTotal = quantidade * 6000M ;
                                     Console.Clear();
                                     Console.WriteLine("************************* Pizzaria MamaMia *************************");
-                                    Console.WriteLine($"\t\t\t\tPedido: TP-{rnd.Next(1100, 5500)} " +
+                                    Console.WriteLine($"Senha do Pedido: TP-{rnd.Next(1100, 5500)} " +
                                     $"\nTotal a pagar: {precoTotal.ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
+                                    $"\nData do Pedido: {dataPedido.ToString("ddd, dd-MM-yyyy HH:mm:ss")}" +
                                     $"\n\t\tGuarde o seu número de pedido, obrigado!");
                                 }
                                 else
