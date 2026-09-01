@@ -8,6 +8,7 @@ namespace MenuPizzaria
         static void Main(string[] args)
         {
             int opcao, escolhaOferta, escolhaTamanho;
+            decimal precoTotal = 0;
 
             Random rnd = new Random();
 
@@ -41,10 +42,11 @@ namespace MenuPizzaria
                             decimal quantidade = Convert.ToInt32(Console.ReadLine());
                             if (quantidade == 1 || quantidade == 2 || quantidade == 3 || quantidade == 4 || quantidade == 5)
                              {
+                                precoTotal = quantidade * 7000M;
                                 Console.Clear();
                                 Console.WriteLine("************************* Pizzaria MamaMia *************************");
                                 Console.WriteLine($"Pedido: OD-{rnd.Next(1100, 5500)} " +
-                                $"Total a pagar: {(quantidade * 14000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))}" +
+                                $"Total a pagar: {precoTotal.ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))}" +
                                 $"\n\t\t\tGuarde o seu número de pedido, obrigado! ");
                         }
                             else
@@ -108,10 +110,11 @@ namespace MenuPizzaria
                                 decimal quantidade = Convert.ToInt32(Console.ReadLine());
                                 if (quantidade == 1 || quantidade == 2 || quantidade == 3 || quantidade == 4 || quantidade == 5)
                                 {
+                                    precoTotal = quantidade * 14000M;
                                     Console.Clear();
                                     Console.WriteLine("************************* Pizzaria MamaMia *************************");
                                     Console.WriteLine($"Pedido: TF-{rnd.Next(1100, 5500)} " +
-                                    $"Total a pagar: {(quantidade * 14000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
+                                    $"Total a pagar: {precoTotal.ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
                                     $"\n\t\t\tGuarde o seu número de pedido, obrigado! ");
                                 }
                                 else
@@ -175,10 +178,11 @@ namespace MenuPizzaria
                                 decimal quantidade = Convert.ToInt32(Console.ReadLine());
                                 if (quantidade == 1 || quantidade == 2 || quantidade == 3 || quantidade == 4 || quantidade == 5)
                                 {
+                                    precoTotal = quantidade * 10000M;
                                     Console.Clear();
                                     Console.WriteLine("************************* Pizzaria MamaMia *************************");
                                     Console.WriteLine($"Pedido: TM-{rnd.Next(1100, 5500)}" +
-                                    $"Total a pagar: {(quantidade * 1000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
+                                    $"Total a pagar: {(precoTotal).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
                                     $"\n\t\t\tGuarde o seu número de pedido, obrigado! ");
                                 }
                                 else
@@ -242,10 +246,11 @@ namespace MenuPizzaria
                                 decimal quantidade = Convert.ToInt32(Console.ReadLine());
                                 if (quantidade == 1 || quantidade == 2 || quantidade == 3 || quantidade == 4 || quantidade == 5)
                                 {
+                                    precoTotal = quantidade * 6000M ;
                                     Console.Clear();
                                     Console.WriteLine("************************* Pizzaria MamaMia *************************");
                                     Console.WriteLine($"\t\t\t\tPedido: TP-{rnd.Next(1100, 5500)} " +
-                                    $"Total a pagar: {(quantidade * 6000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
+                                    $"Total a pagar: {precoTotal.ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
                                     $"\n\t\t\tGuarde o seu número de pedido, obrigado!");
                                 }
                                 else
