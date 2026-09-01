@@ -24,8 +24,8 @@ namespace MenuPizzaria
                 //=======================Oferta do Dia=======================
                 case 1:
                         Console.Clear();
-                    Console.WriteLine("************************* Pizzaria MamaMia *************************");
-                    Console.WriteLine("\t\t\t\t*Pizza à Moda Angolana* \nUma pizza feita com os kitutes da " +
+                    Console.WriteLine("*************************** Pizzaria MamaMia ***************************");
+                    Console.WriteLine("\t\t\t*Pizza à Moda Angolana* \nUma pizza feita com os kitutes da " +
                         "nossa terra, pensando nas famílias angolanas. \nPreço: Akz 7.000,00  \nTamanho: Familiar ");
                         Console.WriteLine("\n1- Pedir \n2- Sair");
 
@@ -40,12 +40,13 @@ namespace MenuPizzaria
                             Console.Write("\nEscolha: ");
                             decimal quantidade = Convert.ToInt32(Console.ReadLine());
                             if (quantidade == 1 || quantidade == 2 || quantidade == 3 || quantidade == 4 || quantidade == 5)
-                            {
-                             
-                            Console.WriteLine($"\t\t\t\tPedido: OD-{rnd.Next(1100, 5500)} " +
-                                $"\n\t\t\tTotal a pagar: {(quantidade * 14000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))}" +
+                             {
+                                Console.Clear();
+                                Console.WriteLine("************************* Pizzaria MamaMia *************************");
+                                Console.WriteLine($"Pedido: OD-{rnd.Next(1100, 5500)} " +
+                                $"Total a pagar: {(quantidade * 14000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))}" +
                                 $"\n\t\t\tGuarde o seu número de pedido, obrigado! ");
-                            }
+                        }
                             else
                             {
                                 Console.WriteLine("Escolha uma das quantidades válidas: 1, 2, 3, 4, 5");
@@ -89,7 +90,7 @@ namespace MenuPizzaria
                         if (escolhaTamanho == 1)
                         {
                             Console.Clear();
-                            
+                            Console.WriteLine("************************* Pizzaria MamaMia *************************");
                             Console.WriteLine("\t\t\t\t*Pizza 4 Estações (Quattro Stagioni)* \nDividida em quatro partes, " +
                             "cada uma representando uma estação: presunto (inverno), " +
                             "alcachofra (primavera), \ncogumelos (outono) e azeitonas (verão). Todos com base de molho e queijo. " +
@@ -107,8 +108,10 @@ namespace MenuPizzaria
                                 decimal quantidade = Convert.ToInt32(Console.ReadLine());
                                 if (quantidade == 1 || quantidade == 2 || quantidade == 3 || quantidade == 4 || quantidade == 5)
                                 {
-                                    Console.WriteLine($"\t\t\t\tPedido: TF-{rnd.Next(1100, 5500)} " +
-                                    $"\n\t\t\tTotal a pagar: {(quantidade * 14000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
+                                    Console.Clear();
+                                    Console.WriteLine("************************* Pizzaria MamaMia *************************");
+                                    Console.WriteLine($"Pedido: TF-{rnd.Next(1100, 5500)} " +
+                                    $"Total a pagar: {(quantidade * 14000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
                                     $"\n\t\t\tGuarde o seu número de pedido, obrigado! ");
                                 }
                                 else
@@ -154,7 +157,7 @@ namespace MenuPizzaria
                         if (escolhaTamanho == 1)
                         {
                             Console.Clear();
-
+                            Console.WriteLine("************************* Pizzaria MamaMia *************************");
                             Console.WriteLine("\t\t\t\t*Pizza Alla Milanese* \nTípica de Milão, " +
                             "tem massa grossa e macia, com uma camada espessa de queijo que cobre todos os outros ingredientes \n" +
                             "Muito popular para comer com um filme no cinema." +
@@ -172,9 +175,11 @@ namespace MenuPizzaria
                                 decimal quantidade = Convert.ToInt32(Console.ReadLine());
                                 if (quantidade == 1 || quantidade == 2 || quantidade == 3 || quantidade == 4 || quantidade == 5)
                                 {
-                                    Console.WriteLine($"\t\t\t\tPedido: TM-{rnd.Next(1100, 5500)}");
-                                    Console.WriteLine($"\n\t\t\tTotal a pagar: {(quantidade * 10000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))}");
-                                    Console.WriteLine($"\n\t\t\tGuarde o seu número de pedido, obrigado!");
+                                    Console.Clear();
+                                    Console.WriteLine("************************* Pizzaria MamaMia *************************");
+                                    Console.WriteLine($"Pedido: TM-{rnd.Next(1100, 5500)}" +
+                                    $"Total a pagar: {(quantidade * 1000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
+                                    $"\n\t\t\tGuarde o seu número de pedido, obrigado! ");
                                 }
                                 else
                                 {
@@ -220,7 +225,7 @@ namespace MenuPizzaria
                         if (escolhaTamanho == 1)
                         {
                             Console.Clear();
-
+                            Console.WriteLine("************************* Pizzaria MamaMia *************************");
                             Console.WriteLine("\t\t\t\t*Pizza Boscaiolae* \nCombinada com muçarela, cogumelos e linguiça. " +
                             "Sabor intensamente saboroso, ideal para quem gosta de sabores fortess" +
                             "\nPreço: Akz 6.000,00");
@@ -237,9 +242,11 @@ namespace MenuPizzaria
                                 decimal quantidade = Convert.ToInt32(Console.ReadLine());
                                 if (quantidade == 1 || quantidade == 2 || quantidade == 3 || quantidade == 4 || quantidade == 5)
                                 {
+                                    Console.Clear();
+                                    Console.WriteLine("************************* Pizzaria MamaMia *************************");
                                     Console.WriteLine($"\t\t\t\tPedido: TP-{rnd.Next(1100, 5500)} " +
-                                    $"\n\t\t\tTotal a pagar: {(quantidade * 6000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
-                                    $"\n\t\t\tGuarde o seu número de pedido, obrigado! ");
+                                    $"Total a pagar: {(quantidade * 6000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
+                                    $"\n\t\t\tGuarde o seu número de pedido, obrigado!");
                                 }
                                 else
                                 {
