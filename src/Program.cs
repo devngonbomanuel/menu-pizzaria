@@ -41,8 +41,9 @@ namespace MenuPizzaria
                             decimal quantidade = Convert.ToInt32(Console.ReadLine());
                             if (quantidade == 1 || quantidade == 2 || quantidade == 3 || quantidade == 4 || quantidade == 5)
                             {
-                                Console.WriteLine($"\t\t\t\tPedido: OD-{rnd.Next(1100, 5500)} " +
-                                $"\n\t\t\tTotal a pagar: {(quantidade*7000M).ToString(CultureInfo.CreateSpecificCulture("pt-AO"))}" +
+                             
+                            Console.WriteLine($"\t\t\t\tPedido: OD-{rnd.Next(1100, 5500)} " +
+                                $"\n\t\t\tTotal a pagar: {(quantidade * 14000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))}" +
                                 $"\n\t\t\tGuarde o seu número de pedido, obrigado! ");
                             }
                             else
@@ -107,7 +108,7 @@ namespace MenuPizzaria
                                 if (quantidade == 1 || quantidade == 2 || quantidade == 3 || quantidade == 4 || quantidade == 5)
                                 {
                                     Console.WriteLine($"\t\t\t\tPedido: TF-{rnd.Next(1100, 5500)} " +
-                                    $"\n\t\t\tTotal a pagar: Akz {(quantidade * 14000M).ToString(CultureInfo.CreateSpecificCulture("pt-AO"))} " +
+                                    $"\n\t\t\tTotal a pagar: {(quantidade * 14000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
                                     $"\n\t\t\tGuarde o seu número de pedido, obrigado! ");
                                 }
                                 else
@@ -172,7 +173,7 @@ namespace MenuPizzaria
                                 if (quantidade == 1 || quantidade == 2 || quantidade == 3 || quantidade == 4 || quantidade == 5)
                                 {
                                     Console.WriteLine($"\t\t\t\tPedido: TM-{rnd.Next(1100, 5500)}");
-                                    Console.WriteLine($"\n\t\t\tTotal a pagar: {(quantidade * 10000M).ToString(CultureInfo.CreateSpecificCulture("pt-AO"))}");
+                                    Console.WriteLine($"\n\t\t\tTotal a pagar: {(quantidade * 10000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))}");
                                     Console.WriteLine($"\n\t\t\tGuarde o seu número de pedido, obrigado!");
                                 }
                                 else
@@ -237,7 +238,7 @@ namespace MenuPizzaria
                                 if (quantidade == 1 || quantidade == 2 || quantidade == 3 || quantidade == 4 || quantidade == 5)
                                 {
                                     Console.WriteLine($"\t\t\t\tPedido: TP-{rnd.Next(1100, 5500)} " +
-                                    $"\n\t\t\tTotal a pagar: Akz {(quantidade * 6000M).ToString(CultureInfo.CreateSpecificCulture("pt - AO"))} " +
+                                    $"\n\t\t\tTotal a pagar: {(quantidade * 6000M).ToString("C", CultureInfo.CreateSpecificCulture("pt-AO"))} " +
                                     $"\n\t\t\tGuarde o seu número de pedido, obrigado! ");
                                 }
                                 else
